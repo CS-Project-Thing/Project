@@ -24,7 +24,7 @@ Note: all operations are to be computed mod 2^64. That is to say, we pretend we 
     - OR: Compute bitwise or of @r[arg1] and @r[arg2] and store it to @r[arg3]
     - AND: Compute bitwise and of @r[arg1] and @r[arg2] and store it to @r[arg3]
     - XOR: Compute bitwise XOR of @r[arg1] and @r[arg2] and store it to @r[arg3]
-    - INV (NOT): Compute the bitwise negation of @r[arg1] and @r[arg2] and store it to @r[arg3]
+    - INV (NOT): Compute the bitwise negation of @r[arg1] and store it to @r[arg2]
     - EQ: Store 1 to @r[arg3] if @r[arg2] and @r[arg1] are equivalent; otherwise store 0 to @r[arg3]
     - OUT: Print the value @r[arg1]
 - Create a driver function in that class which takes a file, and executes the operations stored within
