@@ -30,3 +30,4 @@ Note: all operations are to be computed mod 2^64. That is to say, we pretend we 
 - Create a driver function in that class which takes a file, and executes the operations stored within
 - Add support for:
     - JMP: Jump to the @r[arg1]th instruction and resume execution from there
+    - JEZ: Jump to the @r[arg2]th instruction if and only if @r[arg1] is equal to zero
