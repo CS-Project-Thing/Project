@@ -1,0 +1,4 @@
+This is an optional task for people who want to use the result of their work in the previous tasks.
+
+- Task 4 (optional):
+Write a program which prints the first 20 powers of 2 using either the interpreter from Task 2 or Task 3.
