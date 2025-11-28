@@ -1,0 +1,32 @@
+See Task 1 for a description.
+
+
+Note: A value being at register n means register[n] is equal to that value. A value being at address n means RAM[n] is that value.
+Note: the value at register n will be referred to as @rn. The value at memory address n is referred to as @n.
+Note: all operations are to be computed mod 2^64. That is to say, we pretend we are operating on unsigned 32-bit ints; this is especially relevant for bitwise operations. That is to say, 0 - 1= 2^64 - 1, and 2^64 - 1 + 1 = 0 and INV(0) = 2^64 - 1
+- 1. Create a driver class with RAM (as an array of ints) and registers (dict[int, int])
+- Create an enum class with support for all the operations
+- Create an Operation class (OPERATION, arg1, arg2, arg3)
+- Create a function which reads a file, and transforms it into a list of operations
+- Write methods (functions) in that class for the following operations:
+    - ADD: add the value  @r[arg1] to the value @r[arg2], and store it in @r[arg3]
+    - SUB: subtract @r[arg2] from @r[arg1] and store it to @r[arg3]
+    - MUL: multiply @r[arg1] with @r[arg2] and store it to @r[arg3]
+    - DIV: divide @r[arg1] by @r[arg2] and store the result to @r[arg3]
+    - INC: add one to @r[arg1] and store the result to @r[arg2]
+    - DEC: subtract one from @r[arg1] and store the result to @r[arg2]
+    - RSH: perform a logical right shift @r[arg2] times on @r[arg1] and store the result to @r[arg3]
+    - LSH: perform a logical left shift @r[arg2] times on @r[arg1] and store the result to @r[arg3]
+    - LDI: Load the value [arg1] into @r[arg2]
+    - STO: Store the value @r[arg1] into @[arg2]
+    - LDM: Load the value @[arg1] into @r[arg2]
+    - MOV: Store the value @[arg1] at @[arg2]
+    - OR: Compute bitwise or of @r[arg1] and @r[arg2] and store it to @r[arg3]
+    - AND: Compute bitwise and of @r[arg1] and @r[arg2] and store it to @r[arg3]
+    - XOR: Compute bitwise XOR of @r[arg1] and @r[arg2] and store it to @r[arg3]
+    - INV (NOT): Compute the bitwise negation of @r[arg1] and @r[arg2] and store it to @r[arg3]
+    - EQ: Store 1 to @r[arg3] if @r[arg2] and @r[arg1] are equivalent; otherwise store 0 to @r[arg3]
+    - OUT: Print the value @r[arg1]
+- Create a driver function in that class which takes a file, and executes the operations stored within
+- Add support for:
+    - JMP: Jump to the @r[arg1]th instruction and resume execution from there
