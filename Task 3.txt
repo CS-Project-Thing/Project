@@ -1,0 +1,5 @@
+Task 3:
+
+Rewrite Task 1 in C#. Use Nunit to write unit-tests for this.
+Then, rewrite Task 2 in C#. Use Nunit to write unit-tests for this.
+Alternatively, skip step 1.
