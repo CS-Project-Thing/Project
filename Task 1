@@ -1,0 +1,20 @@
+This is part one of a series of warm-up tasks to familiarise the team with git, github, coding, and other basic skills which are going to be in-use in this project. This may be ignored until instructions are given to the contrary.
+
+
+- #Create an Enum class with support for all the operations
+- #Create a function which takes a user input, and returns a tuple (float, float | None, float | None, Enum)
+- Create functions for the following, returning a float:
+    - ADD: add the first two numbers (add)
+    - SUB: subtract the second number from the first (subtract)
+    - MUL: multiply the first two numbers (multiply)
+    - DIV: divide the first number by the second (divide)
+    - FDIV: divide the first number by the second, then round to the nearest integer (floor divide)
+    - FMA: multiply the first number by the second, then add the third (fused multiply-add)
+    - EXP: raise the first number to the second number (exponentiate)
+    - LOG: take the logarithm base [second number] of the first number (logarithm)
+    - RND: round the first number to the given number of d.p. given by the second number (round)
+
+
+##
+- Create a driver function which takes the tuple from (2) and calls the correct function, then prints the result
+- Refactor the tuple into an object
